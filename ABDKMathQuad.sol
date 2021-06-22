@@ -100,6 +100,7 @@ library ABDKMathQuad {
    */
   function fromUInt (uint256 x) internal pure returns (bytes16) {
     unchecked {
+     int i=0;
       if (x == 0) return bytes16 (0);
       else {
         uint256 result = x;
